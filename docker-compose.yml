@@ -1,0 +1,37 @@
+version: '3'
+
+services:
+
+  backend:
+    image: nimohe/gamer-store-backend:1.0.0
+    restart: always
+    ports:
+      - ${PORT}:${PORT}
+    environment:
+      DB_CONNECTION: ${DB_CONNECTION}
+      PORT: ${PORT}
+      EMAIL_HOST: ${EMAIL_HOST}
+      EMAIL_PORT: ${EMAIL_PORT}
+      SECURE: ${SECURE}
+      EMAIL_USER: ${EMAIL_USER}
+      EMAIL_PASS: ${EMAIL_PASS}
+      JWT_SECRET: ${JWT_SECRET}
+      CLOUDINARY_URL: ${CLOUDINARY_URL}
+      CLOUD_NAME: ${CLOUD_NAME}
+      API_KEY: ${API_KEY}
+      API_SECRET: ${API_SECRET}
+      MERCADO_PAGO_ACCESS_TOKEN: ${MERCADO_PAGO_ACCESS_TOKEN}
+
+      ADMIN_NAME: admin
+      PASSWORD: NiMoHe2000**
+      EMAIL: nicolay.mherrera@gmail.com
+      ADDRESS: XXX
+
+
+
+  # frontend:
+  #   image: nimohe/gamer-store-frontend:2.0.0
+  #   ports:
+  #     - "80:80"
+  #   depends_on:
+  #     - backend
