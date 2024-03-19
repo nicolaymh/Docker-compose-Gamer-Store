@@ -25,7 +25,7 @@
 <a href="https://express-validator.github.io/docs" target="_blank"><img src="https://img.shields.io/badge/6.14.2-%236b00b1?style=plastic&label=express-validator&labelColor=purple" alt="Express-validator"></a>
 <a href="https://www.npmjs.com/package/fs-extra" target="_blank"><img src="https://img.shields.io/badge/11.1.1-red?style=plastic&logo=fs&label=fs-extra&labelColor=%23fff5f5" alt="fs-extra"></a>
 <a href="https://jwt.io/" target="_blank"><img src="https://img.shields.io/badge/8.5.1-%23f4d?style=plastic&logo=jsonwebtokens&logoColor=%23f4d&label=jsonwebtoken&labelColor=black" alt="jsonwebtoken"></a>
-<a href="https://www.mongodb.com/products/tools/compass" target="_blank"><img src="https://img.shields.io/badge/MongoDB-%2300ed64?style=plastic&logo=jsonwebtokens&logoColor=%2300ed64&color=black" alt="mongoDB"></a>
+<a href="https://www.mongodb.com/products/tools/compass" target="_blank"><img src="https://img.shields.io/badge/7.0.6-%2347A248?style=plastic&logo=mongodb&logoColor=%2347A248&label=Mongodb&labelColor=black" alt="mongoDB"></a>
 <a href="https://mongoosejs.com/" target="_blank"><img src="https://img.shields.io/badge/6.6.4-%23800?style=plastic&logo=mongoose&logoColor=%23800&label=mongoose&labelColor=%23fff&color=%23800" alt="mongoose"></a>
 <a href="https://www.npmjs.com/package/multer" target="_blank"><img src="https://img.shields.io/badge/1.4.5_lts.1-%23cf2584?style=plastic&label=Multer&labelColor=black&color=brown" alt="multer"></a>
 <a href="https://nodemailer.com/" target="_blank"><img src="https://img.shields.io/badge/6.8.0-%230f9dce?style=plastic&label=Nodemailer&labelColor=%2322b573" alt="Nodemailer"></a>
