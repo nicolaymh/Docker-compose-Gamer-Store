@@ -15,7 +15,7 @@
 
 ## Dockerhub images
 
-### Backend => [nimohe/gamer-store-backend](https://hub.docker.com/repository/docker/nimohe/gamer-store-backend/general) Dockerhub image.
+### Backend => [nimohe/gamer-store-backend](https://hub.docker.com/r/nimohe/gamer-store-backend) Dockerhub image.
 
 <p align="center">
 <a href="https://nodejs.org/en" target="_blank"><img src="https://img.shields.io/badge/Backen-%23026e00?style=plastic&logo=nodedotjs&logoColor=%23026e00&label=node&labelColor=black" alt="Nodejs"></a>
@@ -34,7 +34,7 @@
 #
 
 
-### Frontend => [nimohe/gamer-store-frontend](https://hub.docker.com/repository/docker/nimohe/gamer-store-frontend/general) Dockerhub image.
+### Frontend => [nimohe/gamer-store-frontend](https://hub.docker.com/r/nimohe/gamer-store-frontend) Dockerhub image.
 
 <p align="center">
 <a href="https://react.dev/" target="_blank"><img src="https://img.shields.io/badge/Frontend-blue?style=plastic&logo=react&logoColor=blue&label=React-18.2.0&labelColor=white" alt="React"></a>
