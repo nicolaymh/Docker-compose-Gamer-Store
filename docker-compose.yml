@@ -5,8 +5,8 @@ services:
 
     image: nimohe/gamer-store-backend:1.0.0
     restart: always
-    ports:
-      - ${PORT}:${PORT}
+#   ports:
+#     - ${PORT}:${PORT}
     environment:
       DB_CONNECTION: ${DB_CONNECTION}
       PORT: ${PORT}
@@ -26,6 +26,8 @@ services:
       PASSWORD: NiMoHe2000**
       EMAIL: nicolay.mherrera@gmail.com
       ADDRESS: XXX
+    networks:
+        - app-network
 
 
   frontend:
@@ -36,3 +38,12 @@ services:
     restart: always
     depends_on:
       - backend 
+    networks:
+        - app-network
+
+
+networks:
+    app-network:
+        driver: bridge
+
+       
