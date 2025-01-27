@@ -8,6 +8,7 @@ services:
 #   ports:
 #     - ${PORT}:${PORT}
     environment:
+      FRONTEND_URL: ${FRONTEND_URL}
       DB_CONNECTION: ${DB_CONNECTION}
       PORT: ${PORT}
       EMAIL_HOST: ${EMAIL_HOST}
@@ -26,6 +27,7 @@ services:
       PASSWORD: NiMoHe2000**
       EMAIL: nicolay.mherrera@gmail.com
       ADDRESS: XXX
+          
     networks:
         - app-network
 
