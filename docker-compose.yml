@@ -1,14 +1,15 @@
-
 services:
-
   backend:
-
-    image: nimohe/gamer-store-backend:1.0.0
+    image: nimohe/gamer-store-backend:1.1.0
     restart: always
-#   ports:
-#     - ${PORT}:${PORT}
+    # I’m not exposing the backend port because the frontend will talk to it
+    # directly through the internal Docker network (http://backend:3000).
+    # If I ever need to test the backend directly (for example with Postman),
+    # I can just uncomment the ports below.
+    # ports:
+    #   - "${PORT}:${PORT}"
     environment:
-      FRONTEND_URL: ${FRONTEND_URL}
+      FRONTEND_URL: ${FRONTEND_URL}   # public URL for the frontend, used in email links
       DB_CONNECTION: ${DB_CONNECTION}
       PORT: ${PORT}
       EMAIL_HOST: ${EMAIL_HOST}
@@ -27,25 +28,19 @@ services:
       PASSWORD: NiMoHe2000**
       EMAIL: nicolay.mherrera@gmail.com
       ADDRESS: XXX
-          
     networks:
-        - app-network
-
+      - app-network
 
   frontend:
-
     image: nimohe/gamer-store-frontend:1.0.0
-    ports:
-      - "80:80"
     restart: always
+    ports:
+      - "80:80"   # frontend is exposed on port 80 (http://server-ip/)
     depends_on:
-      - backend 
+      - backend
     networks:
-        - app-network
-
+      - app-network
 
 networks:
-    app-network:
-        driver: bridge
-
-       
+  app-network:
+    driver: bridge
